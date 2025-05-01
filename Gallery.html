@@ -3,63 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syntax Error Gallery </title>
+  <title>Document</title>
   <style>
-    /* Dropdown Button */
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    .flex
+    {
+      background-color: rgb(106, 13, 173) ;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      
+    }
+    .flex-1  , .flex-3 ,  .flex-5 
+    {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center; 
+      justify-content :space-around;
+    }
+    .flex-2  , .flex-4 ,  .flex-6
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center; 
+      justify-content:space-evenly; 
+    }
+    .img
+    {
+      width: auto;
+      border-radius: 15px;
+      border-style: none;
+      margin: 10px 10px 10px 10px;
+      transition: filter 0.5s ease-in-out;
+    }
+    .img:hover
+    {
+      filter: brightness(80%);
+    }
   </style>
 </head>
 <body>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Zeronith</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <div class="flex">
+    <div class="flex-1">
+      <img class="img" src="/Img/Zurag (1).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
     </div>
-
-<p></p>
-
+    <div class="flex-2">
+      <img class="img" src="/Img/Zurag (1).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+    </div>
+    <div class="flex-3">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+      <img class="img" src="/Img/Zurag (1).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+    </div>
+    <div class="flex-4">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+      <img class="img" src="/Img/Zurag (1).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+    </div>
+    <div class="flex-5">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (1).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+    </div>
+    <div class="flex-6">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+      <img class="img" src="/Img/Zurag (2).jpg" alt="">
+      <img class="img" src="/Img/Zurag (3).jpg" alt="">
+      <img class="img" src="/Img/Zurag (9).jpg" alt="">
+      <img class="img" src="/Img/Zurag (10).jpg" alt="">
+      <img class="img" src="/Img/Zurag (4).jpg" alt="">
+      <img class="img" src="/Img/Zurag (5).jpg" alt="">
+      <img class="img" src="/Img/Zurag (6).jpg" alt="">
+      <img class="img" src="/Img/Zurag (7).jpg" alt="">
+      <img class="img" src="/Img/Zurag (8).jpg" alt="">
+      <img class="img" src="/Img/Zurag (11).jpg" alt="">
+    </div>
   </div>
-
 </body>
 </html>
