@@ -1,0 +1,123 @@
+body {
+    background-color: #eeeeee;
+    color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .navbar {
+    width: 60px;
+    background-color:#eeeeee;
+    display: flex;
+    border-right: #222;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+    position: sticky;
+  }
+  
+  .boddy {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    position: sticky;
+    top: 0;
+    background-color: #eeeeee;
+    z-index: 100;
+      
+  }
+  
+  .search input {
+    width: 1300px;
+    padding: 10px 10px 10px 40px;
+    color: black;
+    background-color: rgb(178, 178, 178);
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 18px;
+    font-size: 24px;
+    color: #444;
+  }
+    .zuragnuud,
+    .zuragnuud1,
+    .zuragnuud2 {
+    column-count: 5;
+    column-gap: 10px;
+
+    }
+
+    .zuragnuud img,
+    .zuragnuud1 img,
+    .zuragnuud2 img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    }
+
+
+  .zuragnuud {
+    margin-left:20px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+  }
+  
+  .zuragnuud img {
+    width: 200px;
+    height: auto;
+    margin:10px ;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  .zer{
+    position:sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 50px;
+    color:#222;
+    }
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-top:30px;
+    }
+
+    .settings{
+        margin-top: 400px;
+    }  
+    .google{
+
+    }
