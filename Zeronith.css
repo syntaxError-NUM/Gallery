@@ -1,0 +1,67 @@
+.flex
+    {
+      background-color: rgb(159, 141, 172) ;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      
+    }
+    .flex-1  , .flex-3 ,  .flex-5 , .flex-7
+    {
+      margin: 10px 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center; 
+      justify-content :space-around;
+    }
+    .flex-2  , .flex-4 ,  .flex-6
+    {
+      margin: 15px 15px 15px 15px;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center; 
+      justify-content:space-evenly; 
+    }
+    .img
+    {
+      width: 100%;
+      border-radius: 20px;
+      border-style: none;
+      margin: 15px 15px 15px 15px;
+      transition: filter 0.5s ease-in-out;
+      object-fit: cover;
+    }
+    .img:hover
+    {
+      filter: brightness(80%);
+    }
+    .main-body-flex
+    {
+      display: flex;
+      flex-direction: row;
+    }
+    .nav-bar-flex
+    {
+      width: 200px;
+      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 10px;
+      position: sticky;  
+      top: 0;
+    }
+    .nav-el
+    {
+      background-color:  rgb(227, 206, 242);
+      width: 100px;
+      height: 100px;
+      border-style: none;
+      margin: 50px;
+      border-radius: 20px;
+    }
