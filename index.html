@@ -1,21 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxError-Gallery Project</title>
-  <link rel="stylesheet" href="/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #04070e;
+            color: white;
+            font-family: 'VT323', monospace;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #0a0f1a;
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+        }
+
+        .img {
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .name-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name {
+            overflow: hidden;
+            font-size: 70px;
+            white-space: nowrap;
+            border-right: 1px solid white;
+            animation: writing 2s steps(12), blinking 1s step-end infinite;
+        }
+
+        @keyframes blinking {
+            50% {
+                border-right-color: transparent;
+            }
+        }
+
+        @keyframes writing {
+            0% {
+                width: 0ch;
+            }
+            100% {
+                width: 12ch;
+            }
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+            height: 700px;
+            position: relative;
+        }
+
+        .carousel {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            animation: rotating 20s linear infinite;
+        }
+
+        @keyframes rotating {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        .oneI, .twoI, .threeI, .fourI {
+            width: 500px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .one, .two, .three, .four {
+            backface-visibility: hidden;
+            position: absolute;
+            width: 500px;
+            height: 300px;
+        }
+
+        .one  { transform: translateZ(300px); }
+        .two  { transform: rotateY(90deg) translateZ(300px); }
+        .three{ transform: rotateY(180deg) translateZ(300px); }
+        .four { transform: rotateY(270deg) translateZ(300px); }
+
+        .footer {
+            margin-top: auto;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.1);
+        }
+
+        .terminal-glow {
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+        }
+
+        .highlight {
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        .warn {
+            color: #ff5555;
+        }
+
+        .info {
+            color: #ffaa00;
+        }
+
+        .binary {
+            color: #8888ff;
+            font-family: 'Fira Code', monospace;
+        }
+
+        .todo {
+            color: #00ff88;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .oneI, .twoI, .threeI, .fourI,
+            .one, .two, .three, .four {
+                width: 90vw;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="name">SyntaxError</div>
-    <div class="motto">Motto</div>
-    <div class="navbar">
-      <a href="/galleryanuka/galleryAnuka.html">Anuka's Gallery</a>
-      <a href="/Muugii/Abracadabra.html">Muugii's Gallery</a>
-      <a href="/Zeronith/Gallery.html">Enguunee's Gallery</a>
+    <div class="container">
+        <div class="header">
+            <img class="img" src="/Logo.jpg" alt="logo of syntax error">
+            <div class="name-container">
+                <p class="name">SyntaxError</p>
+            </div>
+        </div>
+        <div class="body">
+            <div class="carousel">
+    <div class="one">
+        <a href="/Muugii/Abracadabra.html">
+            <img class="oneI" src="/Muugii/images/zurag_2.jpg" alt="">
+        </a>
     </div>
+    <div class="two">
+        <a href="/galleryanuka/galleryAnuka.html">
+            <img class="twoI" src="/galleryanuka/8.jpg" alt="">
+        </a>
+    </div>
+    <div class="three">
+        <a href="/Zeronith/Gallery.html">
+            <img class="threeI" src="/Zeronith/Img/Zurag (6).jpg" alt="">
+        </a>
+    </div>
+    <div class="four">
+        <a href="#">
+            <img class="fourI" src="/Logo.jpg" alt="">
+        </a>
+    </div>
+</div>
 
-  </div>
+        </div>
+        <div class="footer">
+            <div class="terminal-glow">
+                &lt;/&gt; <span class="highlight">Compiling life...</span><br>
+                [<span class="warn">Warning</span>] Overthinking detected.<br>
+                <span class="info">Debugging reality in progress...</span><br>
+                <code class="binary">01010100 01100101 01100001</code><br>
+                <span class="todo">// TODO: Take over the world.</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
