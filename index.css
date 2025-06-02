@@ -1,0 +1,38 @@
+div
+{
+  color: white;
+}
+body
+{
+  background-image: url("/bg.png");
+  object-fit :scale-down;
+}
+.container
+{
+  display: grid;
+  grid-template-columns: 170vh auto ;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.motto {
+  height: 500px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  margin-left: 20px;
+}
+.back-img
+{
+  width: 200px;
+}
